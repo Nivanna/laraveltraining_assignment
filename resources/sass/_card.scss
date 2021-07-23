@@ -1,0 +1,73 @@
+.card{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right top, rgba(0,102,102, 0.5), rgba(0, 14, 14, 0.5));
+    justify-content: center;
+    box-sizing: border-box;
+    &--main{
+        min-width: 50rem;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin: 5vw 0;
+        border-radius: 5%;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+        h3{
+            font-size: 3rem;
+            color: gold;
+            margin-top: 5vh;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 100%;
+            label{
+                font-size: 2rem;
+                font-weight: 400;
+                color: gold;
+                margin: 2rem 0;
+            }
+
+            input{
+                height: 5vh;
+                &::placeholder{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: gray;
+                }
+            }
+            
+            span{
+                margin: 2rem auto;
+                a{
+                    color: gray;
+                    font-size: 2rem;
+                }
+            }
+            button{
+                color: white;
+                font-size: 2rem;
+                width: 20vw;
+                margin: 3rem auto;
+                padding: 1rem;
+                background-color: rgba(85, 64, 11, 0.555);
+                box-sizing: border-box;
+
+            }
+            button:hover{
+                background-color: rgba(46, 34, 2, 0.411);
+            }
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            color: goldenrod;
+            margin-top: 5rem;
+        }
+    }
+}

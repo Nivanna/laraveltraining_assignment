@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 70vw;
+    min-height: calc(100vh - 5rem);
+    box-sizing: border-box;
+    margin: 0 auto;
+}

@@ -1,0 +1,75 @@
+.grobal{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--header{
+        width: 80%;
+        min-height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(to right top , rgba(138, 115, 40, 0.7), rgba(0,0,0,0.8));
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        margin-top: 1rem;
+        h2{
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+    
+    }
+
+    &--data{
+        margin-top: 5rem;
+        box-sizing: border-box;
+        width: 80%;
+        background:linear-gradient(to right top , rgba(138, 115, 40, 0.7), rgba(0,0,0,0.8));
+        padding: 4rem;
+        border-radius: 10px;
+        &--item{
+            margin-top: 2rem ;
+            max-height: 15vh;
+            background:linear-gradient(to right top , rgba(189, 164, 84, 0.7), rgba(202, 144, 8, 0.8));
+            border-radius: 10px;
+            padding: 2rem;
+            h2{
+                a{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: normal;
+                color: white;
+            }
+        }
+        .w-5{
+            display: inline;
+            width: 3rem;
+            height: 3rem;
+        }
+        span{
+            width: 80%;
+            font-size: 1.3rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            nav{
+                div:first-child{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+
+}
