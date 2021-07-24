@@ -3,4 +3,4 @@
 
 <!-- The following are Output of This project -->
 ### Register
-![](public/projectoutput/register.png)
+<img src="public/projectoutput/register.png">
