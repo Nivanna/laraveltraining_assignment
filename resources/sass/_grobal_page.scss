@@ -1,12 +1,13 @@
 .grobal{
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 5rem);
     background-color: whitesmoke;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
     &--header{
-        width: 80%;
+        width: 100%;
         min-height: 15vh;
         display: flex;
         justify-content: center;
@@ -24,31 +25,70 @@
     }
 
     &--data{
-        margin-top: 5rem;
+        margin: 2rem auto;
         box-sizing: border-box;
-        width: 80%;
+        width: 100%;
         background:linear-gradient(to right top , rgba(138, 115, 40, 0.7), rgba(0,0,0,0.8));
-        padding: 4rem;
+        padding: 4rem ;
         border-radius: 10px;
         &--item{
+            display: flex;
+            width: 100%;
             margin-top: 2rem ;
-            max-height: 15vh;
+            box-sizing: border-box;
+            width: inherit;
+            max-height: 16rem;
             background:linear-gradient(to right top , rgba(189, 164, 84, 0.7), rgba(202, 144, 8, 0.8));
             border-radius: 10px;
-            padding: 2rem;
-            h2{
-                a{
-                    font-size: 3rem;
-                    font-weight: bold;
-                    color: white;
-                    text-decoration: none;
+            align-items: center;
+            a{
+                img{
+                    width: 15vw;
+                    height: 15vh;
+                    margin: 1rem 5rem 1rem 1rem;
                 }
             }
-            p{
-                font-size: 1.5rem;
-                font-weight: normal;
-                color: white;
+
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    margin: 0;
+                    a{
+                        font-size: 3rem;
+                        font-weight: bold;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                    color: white;
+                }
             }
+            .btnWrapper{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10rem;
+                button{
+                    background-color: rgb(214, 221, 199);
+                    margin: 2rem;
+                    a{
+                        text-decoration: none;
+                        font-size: 2rem;
+                        color: rgb(202, 93, 93);
+                        padding: 2rem;
+                    }
+                }
+            }
+
         }
         .w-5{
             display: inline;
@@ -67,6 +107,13 @@
                     display: none;
                 }
             }
+        }
+
+        h2{
+            font-size: 5rem;
+            color: white;
+            padding: 5rem;
+            text-align: center;
         }
 
     }

@@ -9,17 +9,27 @@
                 <h2>Welcome to {{$name}}'s Blog</h2>
             </div>
             <div class="grobal--data">
-                @foreach ($blogs as $blog)
-                    <div class="grobal--data--item">
-                        <h2><a href="/home/{{$blog['id']}}">{{$blog['title']}}</a></h2>
-                        <p>{{$blog['description']}}</p>
-                        <div class="btnWrapper">
-                            <a href="/delete/{{$blog['id']}}">Delete</a>
-                            <a href="/edit/{{$blog['id']}}">Edit</a>
+                @if (count($blogs) >0)
+                    @foreach ($blogs as $blog)
+                        <div class="grobal--data--item">
+
+                            <a href="/home/{{$blog['id']}}"><img src="{{asset('images/'.$blog->image_path)}}" alt="cover_image"></a>
+                            <div class="wrapper">
+                                <h2><a href="/home/{{$blog['id']}}">{{$blog['title']}}</a>
+                                    <span>(posted by {{$blog -> user -> name}}) </span>
+                                </h2>
+                                <p>{!!Str::limit($blog['description'], 150, '...')!!}</p>
+                            </div>
+                            <div class="btnWrapper">
+                                <button><a href="/edit/{{$blog['id']}}">Edit</a></button>
+                                <button><a href="/delete/{{$blog['id']}}">Delete</a></button>
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-                {{-- <span>{{$blogs -> links()}}</span> --}}
+                    @endforeach
+                    <span>{{$blogs -> links()}}</span>
+                @else
+                    <h2>No Post</h2>
+                @endif
             </div>
         </div>
     </div>

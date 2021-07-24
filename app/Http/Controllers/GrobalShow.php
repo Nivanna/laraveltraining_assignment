@@ -8,7 +8,7 @@ class GrobalShow extends Controller
 {
     //show grobal data
     function showAll(){
-        $data = Blog::paginate(4);
+        $data = Blog::orderBy('title', 'asc') -> paginate(4);
         return view('pages.home', ['blogs'=> $data]);
     }
 

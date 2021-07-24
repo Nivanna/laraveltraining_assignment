@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LaravelTraing_two_weeks_assignment</title>
-
+        <title>LaravelTraing_Nivanna</title>
+        <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href={{ URL::asset('css/main.css') }}>
@@ -18,6 +18,6 @@
     <body>
         @yield('heading')
         @yield('body')
-        @yield('footer')
+        @yield('script')
     </body>
 </html>

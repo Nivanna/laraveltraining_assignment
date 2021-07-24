@@ -7,7 +7,7 @@
             <input type="text" id="title" name="title" placeholder="Pleaser enter your Blog Title">
             <label for="description">Description</label>
             <input type="text" id="description" name="description" placeholder="Pleaser enter your Blog Description">
-            {{-- <input type="file" name="file"> --}}
+            <input type="file" name="image">
             <button type="submit">Upload</button>
         </form>
         <a href="/home">Cancel</a>

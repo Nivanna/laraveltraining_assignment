@@ -12,6 +12,11 @@ class Blog extends Model
     protected $fillable = [
         'title',
         'description',
-        'user_id',
+        'image_path',
+        'user_id'
     ];
+
+    public function user(){
+        return $this -> belongsTo('App\Models\User');
+    }
 }

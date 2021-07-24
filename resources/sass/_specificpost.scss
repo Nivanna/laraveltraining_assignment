@@ -1,0 +1,33 @@
+.data--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 40vw;
+    }
+    h3{
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    span{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        width: 40vw;
+    }
+    a{
+        text-decoration: none;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    a:hover{
+        color: black;
+    }
+
+    button{
+        margin: 1rem;
+
+    }
+}
