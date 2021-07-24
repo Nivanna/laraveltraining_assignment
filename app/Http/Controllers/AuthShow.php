@@ -44,11 +44,20 @@ class AuthShow extends Controller
         $req -> validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'required|mimes:jpg,png,jpeg|max: 2000'
         ]);
 
         $blog =  Blog::find($req -> id);
-        
+
+        if(!$req->image){
+            //insert data
+            $blog -> title = $req -> title;
+            $blog -> description = $req -> description;
+            $blog -> image_path = $blog -> image_path;
+            $blog -> user_id = session('logged')['user_id'];
+            $blog -> save();
+            return redirect('/');
+        }
+
         //delete current image from public/images folder
         $currentImagePath = 'images/'.$blog -> image_path;
         
@@ -71,8 +80,8 @@ class AuthShow extends Controller
         $blog -> description = $req -> description;
         $blog -> image_path = $newImageName;
         $blog -> user_id = session('logged')['user_id'];
-        
         $blog -> save();
+
         return redirect('/');
     }
 }

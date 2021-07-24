@@ -49,7 +49,7 @@ class UserController extends Controller
         if(!$isMatchedPassword){
             return redirect('register');
         }
-        $req ->session() -> put('logged', ['isLogged' => true, 'name' => $user -> name, 'user_id' => $user -> id]);
+        $req ->session() -> put('logged', ['isLogged' => true, 'name' => $user -> name, 'user_id' => $user -> id, 'addPost' => false]);
 
         return redirect('/');
     }

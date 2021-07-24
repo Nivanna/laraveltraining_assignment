@@ -15,6 +15,11 @@
             <a href="/">Go Back</a>
         </div>
     </div>
+    @if (Session::has('addPost'))
+        <script>
+            swal('Congratulation!', 'Adding Success', 'success', {button: 'OK'});
+        </script>
+    @endif
 @endsection
 @section('script')
     <script>

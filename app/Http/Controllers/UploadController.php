@@ -35,7 +35,12 @@ class UploadController extends Controller
         $blog -> image_path = $newImageName;
         $blog -> user_id = session('logged')['user_id'];
         
-        $blog -> save();
+        if($blog -> save()){
+            //create add post session 
+            $req -> session() -> flash('addPost', ['isAddPost' => true] );
+        }
+
+        
         return redirect('upload');
     }
 }

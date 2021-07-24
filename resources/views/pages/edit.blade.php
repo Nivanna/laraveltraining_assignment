@@ -10,7 +10,7 @@
                 <input value="{{$blog['title']}}" type="text" id="title" name="title" placeholder="Pleaser enter your Blog Title">
                 <label for="description">Description</label>
                 <textarea id="description" name="description" cols="30" rows="10">{!!$blog['description']!!}</textarea>
-                <input type="file" name="image">
+                <input type="file" name="image" value="hlleo">
                 <button type="submit">Update</button>
             </form>
             <a href="/">Cancel</a>
