@@ -14,7 +14,7 @@
 ### Home page when you already login
 <img src="public/projectoutput/homepage_auth.png">
 
-### Manually page when you haven't login yet, or you have login but the post is yours
+### Manually page when you haven't login yet, or you have login but the post isn't yours
 ####  ( Cannot edit or delete post )
 <img src="public/projectoutput/access_specificpage_but.png">
 
